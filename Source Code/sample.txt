@@ -1,0 +1,19 @@
+{
+  "data": [
+      {
+        "src": "images/kfc.png"
+      },
+	  {
+        "src": "images/hsb.png"
+      },
+      {
+        "src": "images/mcd.png"
+      },
+      {
+        "src": "images/ccd.png"
+      },
+      {
+        "src": "images/sub.png"
+      }
+    ]
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>	
+		<title>TSI</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<script src="jquery.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="jquery.mobile-1.4.2.min.css"/>
+		<script src="jquery-1.4.2.min.js"></script>
+		<script src="jquery.mobile-1.4.2.min.js"></script>
+		<script src='lib/shred.bundle.js' type='text/javascript'></script>
+		<script src='lib/swagger.js' type='text/javascript'></script>
+		<script src='lib/sdk-init.js' type='text/javascript'></script>
+		<script src='app.js' type='text/javascript'></script>
+	</head>
+
+	<body>
+	<div data-role="page" id="index">
+	<div data-role="header" class="container">
+			<header>
+				<div><img src = "images/tcs.png"></div>	
+				
+			</header>
+	</div>
+	
+
+	<div role="main" class="ui-content">
+		<div class = "mid" id = "ulti_box">
+				<img src = "ultimatix_logo.gif">
+				<img src = "line.gif">
+			
+				<div id = "login">
+					<div><input type="text" id="un" name="user" placeholder="User Name"></div>
+					<div><input type="password" id="pw" name="pass" placeholder="Password"></div>
+					<div id = "log_bot">
+					
+					<button id = "login_button">Login</button>
+					
+					</div>					
+				</div>
+	</div>
+	</div>
+	
+</div>
+		
+		<script>
+			if (typeof(Storage) != "undefined")
+			{
+				localStorage.u1 = "manu";
+				localStorage.p1 = "manu";
+				localStorage.u2 = "om";
+				localStorage.p2 = "om";
+				localStorage.u3 = "795894";
+				localStorage.p3 = "28jul@TCS";
+			}
+			else
+				alert("Sorry, your browser does not support Web Storage...");
+				
+			
+			$("#login_button").click(check);
+			function check()
+			{
+				var u = document.getElementById("un").value;
+				var p = document.getElementById("pw").value;
+				if ((u === localStorage.u1)&&(p === localStorage.p1)||(u === localStorage.u2)&&(p === localStorage.p2)||(u === localStorage.u3)&&(p === localStorage.p3))
+					window.location.assign("home.html");
+				else
+					alert("Please retry");
+			}
+		
+			
+		</script>
+		
+		
+	</body>
+	
+</html>

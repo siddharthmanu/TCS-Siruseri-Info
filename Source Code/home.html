@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>HOME</title>
+		<link rel="shortcut icon" href="favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/modernizr2.custom.js"></script>
+		<script src="jquery.js"></script>
+		<link rel="stylesheet" href="jquery.mobile-1.4.2.min.css"/>
+		<script src="jquery-1.4.2.min.js"></script>
+		<script src="jquery.mobile-1.4.2.min.js"></script>
+	</head>
+
+	<body>
+	
+		<div data-role="page" id="home">
+
+	<div data-role="header" class="container">
+			<header>
+				<div><img src = "images/tcs.png"></div>	
+				
+			</header>
+	</div>
+
+	<div role="main" class="ui-content">
+			<div id = "content" class = "mid">
+				<div id = "r1" class= "mid">
+					<button class = "cbox" id = "food"></button>
+					<button class = "cbox" id = "bus"></button>
+				</div>
+				<div id = "r2" class = "mid">	
+					<button class = "cbox" id = "event"></button>
+					<button class = "cbox" id = "search"></button>
+				</div>
+			</div>
+			</div>
+			<div data-role="footer">
+
+					<a href="index.html" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-btn-b">LOGOUT</a>
+			</div>
+			
+		</div>
+		
+		<script>
+		$("#food").click(function() {window.location.assign("food.html")});
+		$("#bus").click(function() {window.location.assign("construction.html")});
+		$("#event").click(function() {window.location.assign("construction.html")});
+		$("#search").click(function() {window.location.assign("construction.html")});
+		</script>
+		
+	</body>
+	
+</html>
